@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" src="style.css">
+  <title>Regiones y Comunas de Chile</title>
+  <style>
+
+    .alternativa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: lightblue;
+    }
+
+
+  </style>
+</head>
+<body>
+  <form action="#" class="alternativa">
+    <select name="region" id="region">
+      <option value="">Seleccionar region</option>
+      <option value="Arica">Region de Arica y Parinacota</option>
+      <option value="Tarapaca">Region de Tarapaca</option>
+      <option value="Antofagasta">Region de Antofagasta</option>
+    </select>
+    
+    <p id="comuna">
+    <option value="">Selecciona la comuna</option>  
+    </p>
+    
+    <p>
+      <button>Enviar</button>
+    </p>
+  </form>
+
+  <div class="alternativa" id="alternativa-Arica">
+    <select name="comuna">
+      <option value="1Ari">Comuna de Arica</option>
+      <option value="2Ari">Comuna de Camarones</option>
+      <option value="3Ari">Comuna General Lagos</option>
+      <option value="4Ari">Comuna de Putre</option>
+    </select>
+  </div>
+
+  <div class="alternativa" id="alternativa-Tarapaca">
+    <select name="comuna">
+      <option value="1Tar">Comuna de Camiña</option>
+      <option value="2Tar">Comuna de Colchane</option>
+      <option value="3Tar">Comuna de Huara</option>
+      <option value="4Tar">Comuna de Pica</option>
+      <option value="5Tar">Comuna de Pozo Almonte</option>
+
+      <option value="6Tar">Comuna de Iquique</option>  
+      <option value="7Tar">Comuna de Alto Hospicio</option>  
+         
+    </select>
+  </div>
+
+  <div class="alternativa" id="alternativa-Antofagasta">
+    <select name="comuna">
+      <option value="1Ant">Comuna de Antofagasta</option>
+      <option value="2Ant">Comuna de Mejillones</option>
+      <option value="3Ant">Comuna de Sierra Gorda</option>
+      <option value="4Ant">Comuna de Calama</option>
+      <option value="5Ant">Comuna de Ollague</option>
+      <option value="6Ant">Comuna de San Pedro de Atacama</option>
+      <option value="7Ant">Comuna de María Elena</option>
+      <option value="8Ant">Comuna de Tocopilla</option>
+      <option value="9Ant">Comuna de Taltal</option>
+    </select>
+  </div>
+
+
+  <script>
+    document.getElementById('region').addEventListener('change', function(e) {
+      console.log(this, this.value);
+      if(this.value != '') {
+        document.getElementById('comuna').innerHTML = document.getElementById(`alternativa-${this.value}`).innerHTML;
+      } else {
+        document.getElementById('comuna').innerText = 'Selecciona una comuna'
+      }
+    });
+  </script>
+</body>
+</html>

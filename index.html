@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="style.css">
+    <title>Pagina Principal</title>
+    <style>
+        .alternativa {
+          display: none;
+        }
+      </style>
+</head>
+<body>
+    <form method="post" action="/send/">
+        Selecciona la Comuna deseada:
+        <select multiple>
+            <optgroup label="Region de Arica y Parinacota">
+                <optgroup label="Provincia de Arica">
+                <option value="1">Comuna de Arica</option>
+                <option value="2">Comuna de Camarones</option>
+                </optgroup>
+                <optgroup label="Provincia de Parinacota">
+                    <option value="1">Comuna General Lagos</option>
+                    <option value="2">Comuna de Putre</option>
+                </optgroup>
+              </optgroup>
+          <optgroup label="Region de Tarapacá">
+            <optgroup label="Provincia de El Tamarugal">
+                <option value="1">Comuna de Camiña</option>
+                <option value="2">Comuna de Colchane</option>
+                <option value="1">Comuna de Huara</option>
+                <option value="2">Comuna de Pica</option>
+                <option value="2">Comuna de Pozo Almonte</option>
+            </optgroup>
+                <optgroup label="Provincia de Iquique">
+                    <option value="1">Comuna de Iquique</option>
+                    <option value="2">Comuna de Alto Hospicio</option>
+                </optgroup>
+          </optgroup>
+          <optgroup label="Region Metropolitana">
+            <optgroup label="Provincia de Chacabuco">
+                <option value="1">Comuna de Colina</option>
+                <option value="2">Comuna de Lampa</option>
+                <option value="1">Comuna de Tiltil</option>
+            </optgroup>
+            <optgroup label="Provincia de Cordillera">
+                <option value="1">Comuna de Pirque</option>
+                <option value="2">Comuna de Puente Alto</option>
+                <option value="1">Comuna de San José de Maipo</option>
+            </optgroup>
+            <optgroup label="Provincia de Maipo">
+                <option value="1">Comuna de Buin</option>
+                <option value="2">Comuna de Calera de Tango</option>
+                <option value="1">Comuna de Paine</option>
+                <option value="2">Comuna de San Bernardo</option>
+            </optgroup>
+            <optgroup label="Provincia de Melipilla">
+                <option value="1">Comuna de Alhué</option>
+                <option value="2">Comuna de Curacaví</option>
+                <option value="1">Comuna de María Pinto</option>
+                <option value="2">Comuna de Melipilla</option>
+                <option value="2">Comuna de San Pedro</option>
+            </optgroup>
+            <optgroup label="Provincia de Santiago">
+                <option value="1">Comuna de Cerrillos</option>
+                <option value="2">Comuna de Cerro Navia</option>
+                <option value="1">Comuna de Conchalí</option>
+                <option value="2">Comuna de El Bosque</option>
+                <option value="2">Comuna de Estación Central</option>
+            </optgroup>
+          </optgroup>
+        </select>
+        <br>
+        <select name="" id="">
+            <option value="1">Region de Arica y Parinacota</option><br>
+                <select name="" id="">
+                    <option value="2">Provincia de Arica</option>
+                </select>
+            <option value="2">Region de Tarapacá</option><br>
+            <option value="3">Region Metropolitana</option>
+        </select>
+
+
+
+
+
+      </form>
+      <script src="./script.js"></script>
+</body>
+</html>
